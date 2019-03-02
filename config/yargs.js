@@ -1,3 +1,10 @@
+const id = {
+    id: {
+        demand: true,
+        alias: 'i',
+        desc: 'ID de la tarea a actualizar'
+    }
+}
 const opciones = {
     crear: {
         tarea: {
@@ -8,11 +15,7 @@ const opciones = {
     },
     listar: {},
     actualizar: {
-        id: {
-            demand: true,
-            alias: 'i',
-            desc: 'ID de la tarea a actualizar'
-        },
+        id,
         completado: {
             alias: 'c',
             default: true,
@@ -27,11 +30,7 @@ const opciones = {
         }
     },
     borrar: {
-        id: {
-            demand: true,
-            alias: 'i',
-            desc: 'ID de la tarea a actualizar'
-        },
+        id
     }
 };
 const argv = require('yargs')
